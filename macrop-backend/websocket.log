@@ -1,0 +1,6 @@
+
+In WebSocketServer.php line 48:
+                                  
+  Class 'MyApp\Pusher' not found  
+                                  
+
