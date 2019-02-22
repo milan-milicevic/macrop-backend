@@ -1,0 +1,526 @@
+[2019-01-20 22:38:37] local.ERROR: FastRoute\BadRouteException: Static route "/api/user/search" is shadowed by previously defined variable route "/api/user/([^/]+)" for method "GET" in E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php:95
+Stack trace:
+#0 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, Array)
+#1 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, Array)
+#2 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(203): FastRoute\RouteCollector->addRoute('GET', '/api/user/searc...', Array)
+#3 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\functions.php(25): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(FastRoute\RouteCollector))
+#4 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(205): FastRoute\simpleDispatcher(Object(Closure))
+#5 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(167): Laravel\Lumen\Application->createDispatcher()
+#6 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#8 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandlePreflight.php(29): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#9 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandlePreflight->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#10 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#11 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#12 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandleCors.php(36): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#13 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandleCors->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#14 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#15 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#16 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(104): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#17 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#18 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(169): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#19 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#20 E:\Master\napredno softversko\heroku-backend\public\index.php(28): Laravel\Lumen\Application->run()
+#21 {main} {"exception":"[object] (FastRoute\\BadRouteException(code: 0): Static route \"/api/user/search\" is shadowed by previously defined variable route \"/api/user/([^/]+)\" for method \"GET\" at E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\DataGenerator\\RegexBasedAbstract.php:95)
+[stacktrace]
+#0 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\DataGenerator\\RegexBasedAbstract.php(30): FastRoute\\DataGenerator\\RegexBasedAbstract->addStaticRoute('GET', Array, Array)
+#1 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\RouteCollector.php(44): FastRoute\\DataGenerator\\RegexBasedAbstract->addRoute('GET', Array, Array)
+#2 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(203): FastRoute\\RouteCollector->addRoute('GET', '/api/user/searc...', Array)
+#3 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\functions.php(25): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(FastRoute\\RouteCollector))
+#4 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(205): FastRoute\\simpleDispatcher(Object(Closure))
+#5 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(167): Laravel\\Lumen\\Application->createDispatcher()
+#6 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#8 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandlePreflight.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#9 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandlePreflight->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#10 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#11 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#12 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandleCors.php(36): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandleCors->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#14 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#15 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(104): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 E:\\Master\
+apredno softversko\\heroku-backend\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 
+[2019-01-20 22:38:45] local.ERROR: FastRoute\BadRouteException: Static route "/api/user/search" is shadowed by previously defined variable route "/api/user/([^/]+)" for method "GET" in E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php:95
+Stack trace:
+#0 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, Array)
+#1 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, Array)
+#2 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(203): FastRoute\RouteCollector->addRoute('GET', '/api/user/searc...', Array)
+#3 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\functions.php(25): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(FastRoute\RouteCollector))
+#4 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(205): FastRoute\simpleDispatcher(Object(Closure))
+#5 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(167): Laravel\Lumen\Application->createDispatcher()
+#6 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#8 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandlePreflight.php(29): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#9 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandlePreflight->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#10 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#11 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#12 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandleCors.php(36): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#13 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandleCors->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#14 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#15 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#16 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(104): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#17 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#18 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(169): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#19 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#20 E:\Master\napredno softversko\heroku-backend\public\index.php(28): Laravel\Lumen\Application->run()
+#21 {main} {"exception":"[object] (FastRoute\\BadRouteException(code: 0): Static route \"/api/user/search\" is shadowed by previously defined variable route \"/api/user/([^/]+)\" for method \"GET\" at E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\DataGenerator\\RegexBasedAbstract.php:95)
+[stacktrace]
+#0 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\DataGenerator\\RegexBasedAbstract.php(30): FastRoute\\DataGenerator\\RegexBasedAbstract->addStaticRoute('GET', Array, Array)
+#1 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\RouteCollector.php(44): FastRoute\\DataGenerator\\RegexBasedAbstract->addRoute('GET', Array, Array)
+#2 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(203): FastRoute\\RouteCollector->addRoute('GET', '/api/user/searc...', Array)
+#3 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\functions.php(25): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(FastRoute\\RouteCollector))
+#4 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(205): FastRoute\\simpleDispatcher(Object(Closure))
+#5 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(167): Laravel\\Lumen\\Application->createDispatcher()
+#6 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#8 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandlePreflight.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#9 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandlePreflight->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#10 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#11 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#12 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandleCors.php(36): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandleCors->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#14 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#15 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(104): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 E:\\Master\
+apredno softversko\\heroku-backend\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 
+[2019-01-20 22:41:33] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '}', expecting ';' in E:\Master\napredno softversko\heroku-backend\app\Http\Controllers\UserController.php:100
+Stack trace:
+#0 E:\Master\napredno softversko\heroku-backend\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('E:\\Master\\napre...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#3 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\container\Container.php(779): ReflectionClass->__construct('App\\Http\\Contro...')
+#4 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\container\Container.php(658): Illuminate\Container\Container->build('App\\Http\\Contro...')
+#5 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\container\Container.php(609): Illuminate\Container\Container->resolve('App\\Http\\Contro...', Array)
+#6 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Application.php(260): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#7 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(311): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#8 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#9 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(163): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#12 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#13 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandlePreflight.php(29): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#14 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandlePreflight->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#15 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#16 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#17 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandleCors.php(36): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#18 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandleCors->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#20 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#21 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(104): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#22 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#23 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(169): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#24 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#25 E:\Master\napredno softversko\heroku-backend\public\index.php(28): Laravel\Lumen\Application->run()
+#26 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected '}', expecting ';' at E:\\Master\
+apredno softversko\\heroku-backend\\app\\Http\\Controllers\\UserController.php:100)
+[stacktrace]
+#0 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('E:\\\\Master\\\
+apre...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\\\Http\\\\Contro...')
+#3 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\container\\Container.php(779): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#4 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\container\\Container.php(658): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#5 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\container\\Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#6 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Application.php(260): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(311): Laravel\\Lumen\\Application->make('App\\\\Http\\\\Contro...')
+#8 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(163): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#13 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandlePreflight.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandlePreflight->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#15 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandleCors.php(36): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#18 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandleCors->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#19 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#21 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(104): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#22 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#24 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#25 E:\\Master\
+apredno softversko\\heroku-backend\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#26 {main}
+"} 
+[2019-01-20 22:52:47] local.ERROR: ErrorException: Object of class Illuminate\Database\Eloquent\Builder could not be converted to string in E:\Master\napredno softversko\heroku-backend\vendor\symfony\http-foundation\Response.php:404
+Stack trace:
+#0 E:\Master\napredno softversko\heroku-backend\vendor\symfony\http-foundation\Response.php(404): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(4096, 'Object of class...', 'E:\\Master\\napre...', 404, Array)
+#1 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\http\Response.php(45): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Eloquent\Builder))
+#2 E:\Master\napredno softversko\heroku-backend\vendor\symfony\http-foundation\Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Eloquent\Builder))
+#3 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(436): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Eloquent\Builder))
+#4 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(376): Laravel\Lumen\Application->prepareResponse(Object(Illuminate\Database\Eloquent\Builder))
+#5 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(342): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#6 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(316): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\UserController), 'filter', Array)
+#7 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#8 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(163): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#11 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#12 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandlePreflight.php(29): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#13 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandlePreflight->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#14 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#15 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#16 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandleCors.php(36): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#17 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandleCors->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#18 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#19 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#20 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(104): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#21 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(169): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#23 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#24 E:\Master\napredno softversko\heroku-backend\public\index.php(28): Laravel\Lumen\Application->run()
+#25 {main} {"exception":"[object] (ErrorException(code: 0): Object of class Illuminate\\Database\\Eloquent\\Builder could not be converted to string at E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\symfony\\http-foundation\\Response.php:404)
+[stacktrace]
+#0 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\symfony\\http-foundation\\Response.php(404): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(4096, 'Object of class...', 'E:\\\\Master\\\
+apre...', 404, Array)
+#1 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\http\\Response.php(45): Symfony\\Component\\HttpFoundation\\Response->setContent(Object(Illuminate\\Database\\Eloquent\\Builder))
+#2 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\symfony\\http-foundation\\Response.php(202): Illuminate\\Http\\Response->setContent(Object(Illuminate\\Database\\Eloquent\\Builder))
+#3 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(436): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\Database\\Eloquent\\Builder))
+#4 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(376): Laravel\\Lumen\\Application->prepareResponse(Object(Illuminate\\Database\\Eloquent\\Builder))
+#5 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(342): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#6 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(316): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'filter', Array)
+#7 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#8 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#9 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(163): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#10 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#11 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#12 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandlePreflight.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandlePreflight->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#14 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#15 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandleCors.php(36): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandleCors->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#18 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#19 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(104): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#21 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#22 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#23 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#24 E:\\Master\
+apredno softversko\\heroku-backend\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#25 {main}
+"} 
+[2019-01-20 23:40:50] local.ERROR: FastRoute\BadRouteException: Static route "/api/user/search" is shadowed by previously defined variable route "/api/user/([^/]+)" for method "GET" in E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php:95
+Stack trace:
+#0 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, Array)
+#1 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, Array)
+#2 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(203): FastRoute\RouteCollector->addRoute('GET', '/api/user/searc...', Array)
+#3 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\functions.php(25): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(FastRoute\RouteCollector))
+#4 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(205): FastRoute\simpleDispatcher(Object(Closure))
+#5 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(167): Laravel\Lumen\Application->createDispatcher()
+#6 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#8 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandlePreflight.php(29): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#9 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandlePreflight->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#10 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#11 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#12 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandleCors.php(36): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#13 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandleCors->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#14 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#15 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#16 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(104): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#17 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#18 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(169): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#19 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#20 E:\Master\napredno softversko\heroku-backend\public\index.php(28): Laravel\Lumen\Application->run()
+#21 {main} {"exception":"[object] (FastRoute\\BadRouteException(code: 0): Static route \"/api/user/search\" is shadowed by previously defined variable route \"/api/user/([^/]+)\" for method \"GET\" at E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\DataGenerator\\RegexBasedAbstract.php:95)
+[stacktrace]
+#0 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\DataGenerator\\RegexBasedAbstract.php(30): FastRoute\\DataGenerator\\RegexBasedAbstract->addStaticRoute('GET', Array, Array)
+#1 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\RouteCollector.php(44): FastRoute\\DataGenerator\\RegexBasedAbstract->addRoute('GET', Array, Array)
+#2 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(203): FastRoute\\RouteCollector->addRoute('GET', '/api/user/searc...', Array)
+#3 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\functions.php(25): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(FastRoute\\RouteCollector))
+#4 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(205): FastRoute\\simpleDispatcher(Object(Closure))
+#5 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(167): Laravel\\Lumen\\Application->createDispatcher()
+#6 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#8 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandlePreflight.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#9 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandlePreflight->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#10 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#11 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#12 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandleCors.php(36): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandleCors->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#14 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#15 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(104): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 E:\\Master\
+apredno softversko\\heroku-backend\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 
+[2019-01-20 23:42:51] local.ERROR: FastRoute\BadRouteException: Static route "/api/user/event" is shadowed by previously defined variable route "/api/user/([^/]+)" for method "GET" in E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php:95
+Stack trace:
+#0 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, Array)
+#1 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, Array)
+#2 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(203): FastRoute\RouteCollector->addRoute('GET', '/api/user/event', Array)
+#3 E:\Master\napredno softversko\heroku-backend\vendor\nikic\fast-route\src\functions.php(25): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(FastRoute\RouteCollector))
+#4 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(205): FastRoute\simpleDispatcher(Object(Closure))
+#5 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(167): Laravel\Lumen\Application->createDispatcher()
+#6 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#8 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandlePreflight.php(29): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#9 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandlePreflight->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#10 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#11 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#12 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandleCors.php(36): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#13 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandleCors->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#14 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#15 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#16 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(104): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#17 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#18 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(169): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#19 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#20 E:\Master\napredno softversko\heroku-backend\public\index.php(28): Laravel\Lumen\Application->run()
+#21 {main} {"exception":"[object] (FastRoute\\BadRouteException(code: 0): Static route \"/api/user/event\" is shadowed by previously defined variable route \"/api/user/([^/]+)\" for method \"GET\" at E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\DataGenerator\\RegexBasedAbstract.php:95)
+[stacktrace]
+#0 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\DataGenerator\\RegexBasedAbstract.php(30): FastRoute\\DataGenerator\\RegexBasedAbstract->addStaticRoute('GET', Array, Array)
+#1 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\RouteCollector.php(44): FastRoute\\DataGenerator\\RegexBasedAbstract->addRoute('GET', Array, Array)
+#2 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(203): FastRoute\\RouteCollector->addRoute('GET', '/api/user/event', Array)
+#3 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\
+ikic\\fast-route\\src\\functions.php(25): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(FastRoute\\RouteCollector))
+#4 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(205): FastRoute\\simpleDispatcher(Object(Closure))
+#5 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(167): Laravel\\Lumen\\Application->createDispatcher()
+#6 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#8 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandlePreflight.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#9 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandlePreflight->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#10 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#11 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#12 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandleCors.php(36): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandleCors->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#14 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#15 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(104): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 E:\\Master\
+apredno softversko\\heroku-backend\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 
+[2019-01-20 23:51:39] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Too few arguments to function App\Http\Controllers\EventController::getUserEvents(), 0 passed and exactly 1 expected in E:\Master\napredno softversko\heroku-backend\app\Http\Controllers\EventController.php:115
+Stack trace:
+#0 [internal function]: App\Http\Controllers\EventController->getUserEvents()
+#1 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#2 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#4 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\container\Container.php(572): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#5 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(376): Illuminate\Container\Container->call(Array, Array)
+#6 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(342): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#7 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(316): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\EventController), 'getUserEvents', Array)
+#8 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#9 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(163): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#12 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#13 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandlePreflight.php(29): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#14 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandlePreflight->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#15 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#16 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#17 E:\Master\napredno softversko\heroku-backend\vendor\barryvdh\laravel-cors\src\HandleCors.php(36): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#18 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(151): Barryvdh\Cors\HandleCors->handle(Object(Laravel\Lumen\Http\Request), Object(Closure))
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#20 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#21 E:\Master\napredno softversko\heroku-backend\vendor\illuminate\pipeline\Pipeline.php(104): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#22 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#23 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(169): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#24 E:\Master\napredno softversko\heroku-backend\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#25 E:\Master\napredno softversko\heroku-backend\public\index.php(28): Laravel\Lumen\Application->run()
+#26 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Too few arguments to function App\\Http\\Controllers\\EventController::getUserEvents(), 0 passed and exactly 1 expected at E:\\Master\
+apredno softversko\\heroku-backend\\app\\Http\\Controllers\\EventController.php:115)
+[stacktrace]
+#0 [internal function]: App\\Http\\Controllers\\EventController->getUserEvents()
+#1 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#2 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#4 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\container\\Container.php(572): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#5 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(376): Illuminate\\Container\\Container->call(Array, Array)
+#6 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(342): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#7 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(316): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EventController), 'getUserEvents', Array)
+#8 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(163): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(52): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#13 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandlePreflight.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandlePreflight->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#15 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\barryvdh\\laravel-cors\\src\\HandleCors.php(36): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#18 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(151): Barryvdh\\Cors\\HandleCors->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#19 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(32): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#21 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\illuminate\\pipeline\\Pipeline.php(104): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#22 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#24 E:\\Master\
+apredno softversko\\heroku-backend\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#25 E:\\Master\
+apredno softversko\\heroku-backend\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#26 {main}
+"} 
